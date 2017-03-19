@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_admin_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="csc383.busstopbuddy.ParentMenuActivity">
+
+    <Button
+        android:id="@+id/trackBusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="177dp"
+        android:text="Track Bus"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/getETAButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Get ETA"
+        android:layout_below="@+id/trackBusButton"
+        android:layout_alignEnd="@+id/trackBusButton"
+        android:layout_alignStart="@+id/trackBusButton" />
+
+    <Button
+        android:id="@+id/viewDriverInfoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="View Driver Info"
+        android:layout_below="@+id/getETAButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/AbsenceNotifyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Absence Notification"
+        android:layout_below="@+id/viewDriverInfoButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/studentCheckButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AbsenceNotifyButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="View Student Check-ins" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:onClick="backButton"
+        android:text="Back"
+        android:textAlignment="center" />
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_admin_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="csc383.busstopbuddy.AdminMenuActivity">
+
+    <Button
+        android:text="Track Bus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/trackBusButton"
+        android:onClick="changeToBusTrack"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="107dp" />
+
+    <Button
+        android:text="Manage Buses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/manageBusesButton"
+        android:layout_marginLeft="182dp"
+        android:layout_below="@+id/trackBusButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp" />
+
+    <Button
+        android:text="View Student Info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/studentInfoButton"
+        android:layout_marginLeft="182dp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/studentCheckButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="View Parent Info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/parentInfoButton"
+        android:layout_marginLeft="182dp"
+        android:layout_below="@+id/manageBusesButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp" />
+
+    <Button
+        android:text="View Driver Info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/driverInfoButton"
+        android:textAlignment="center"
+        android:layout_marginLeft="182dp"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/parentInfoButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="View Student Check-ins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/studentCheckButton"
+        android:layout_marginLeft="182dp"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/driverInfoButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:onClick="backButton"
+        android:text="Back" />
+
+</RelativeLayout>
